@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>Formulaire</h1>
+
+
+ <h2>Choix</h2>
+
+ <label for="choix_ville">Choisissez une ville comme destination:</label>
+ <br>
+ <select name="Ville" id="choix_ville">
+ <option value="">--choix de la ville--</option>
+ <option value="Paris">Paris</option>
+ <option value="Zagreb">Zagreb</option>
+ <option value="Jakarta">Jakarta</option>
+ <option value="Johanesbourg">Johanesbourg</option>
+ <option value="Brazilia">Brazilia</option>
+ <option value="Washington DC">Washington DC</option>
+ </select>
+
+ <h2>Coordonnées</h2>
+
+ <form action="Recapitulatif.html" method="GET">
+ <label for="Nom">Nom*</label><br>
+ <input type="text" name="Nom" id="Nom"><br><br>
+ <label for="Prénom">Prénom*</label><br>
+ <input type="text" name="Prémon" id="Prénom"><br><br>
+ <label for="Adresse mail">Adresse mail*</label><br>
+ <input type="email" name="email" id="email"><br><br>
+ <label for="Numéro de téléphone">Téléphone*</label><br>
+ <input type="tel" name="Numéro de téléphone" id="Numéro de téléphone"><br><br>
+ <label for="Date de départ">Date de départ*</label><br>
+ <input type="date" name="Date de départ" id="Date de départ"><br><br>
+ <label for="Date de retour">Date de retour*</label><br>
+ <input type="date" name="Date de retour" id="Date de retour"><br><br>
+ <label for="Nombre d'adultes">Nombre d'adultes*</label><br>
+ <input type="number" min="0" max="20" name="Nombre d'adultes" id="Nombre d'adultes">
+ <br><br>
+ <label for="nombre d'enfants">Nombre d'enfants(-12 ans)*</label><br>
+ <input type="number" min="0" max="20" name="Nombre d'enfants" id="Nombre d'enfants"><br><br>
+ Petit-déjeuné ?<input type="checkbox" name="Petit-déjeuné" id="Petit-déjeuné"><br><br>
+ Renseignements diverse que nous devrions savoir :<br>
+ <input type="text" size="70" name="Renseignements" id="Renseignements"><br><br>
+ faire une fenêtre affichant le prix total en fonction des informations remplies
+ <div style="height: 50px;display:block;"></div>
+ <input type="reset" value="Remise à zéro" name="Remise à zéro" id="Remise à zéro"><br><br>
+ <input type="submit" value="Soumettre" name="submit" id="submit">
+ <h4>redirige vers la page de récapitulatif</h4>
+ </form>
+
+</body>
+</html>
